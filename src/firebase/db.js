@@ -20,16 +20,3 @@ db.ref(`todo/${id}`).set({
   title,
   content,
 });
-
-
-// export const doCreateToDo = (id, title, content) => {
-//   db.ref('todo/' + id).set({
-//     title, 
-//     content,
-//   });
-// }
-
-// export const onceGetToDo = () =>
-//   db.ref('todo').once('value');
-
-// ${id}

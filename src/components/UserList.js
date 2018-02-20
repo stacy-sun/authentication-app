@@ -25,42 +25,6 @@ const styles = {
   },
 };
 
-// const tableData = [
-//     {name: {users}},
-//     {status: null}
-//   {
-//     name: '{ !!users && <UserList users={users} /> }',
-//     status: 'Employed',
-//   },
-//   {
-//     name: 'Randal White',
-//     status: 'Unemployed',
-//   },
-//   {
-//     name: 'Stephanie Sanders',
-//     status: 'Employed',
-//   },
-//   {
-//     name: 'Steve Brown',
-//     status: 'Employed',
-//   },
-//   {
-//     name: 'Joyce Whitten',
-//     status: 'Employed',
-//   },
-//   {
-//     name: 'Samuel Roberts',
-//     status: 'Employed',
-//   },
-//   {
-//     name: 'Adam Moore',
-//     status: 'Employed',
-//   },
-// ];
-
-/**
- * A more complex example, allowing the table height to be set, and key boolean properties to be toggled.
- */
 class UserList extends Component {
   state = {
     fixedHeader: true,
@@ -133,7 +97,6 @@ class UserList extends Component {
               <TableRow key={index}>
                 <TableRowColumn>{index}</TableRowColumn>
                 <TableRowColumn>{ !!users && <UserList users={users} /> }</TableRowColumn>
-                {/* <TableRowColumn>{row.status}</TableRowColumn> */}
               </TableRow>
               ))}
           </TableBody>

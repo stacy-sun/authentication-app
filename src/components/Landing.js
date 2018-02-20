@@ -74,7 +74,6 @@ class HorizontalNonLinearStepper extends React.Component {
 
     return (
       <Card style={cardStyle}>
-      {/* <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}> */}
       <h1 style={ {textAlign: 'center'} }>Welcome to My React App</h1>
         <Stepper linear={false} activeStep={stepIndex}>
           <Step>
@@ -117,7 +116,6 @@ class HorizontalNonLinearStepper extends React.Component {
             }
           </div>
         </div>
-      {/* </div> */}
       </Card>
     );
   }

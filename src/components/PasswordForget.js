@@ -76,15 +76,6 @@ class PasswordForgetForm extends Component {
             onChange={event => this.setState(byPropKey('email', event.target.value))}
             type="text"
           /><br />
-        {/* <input
-          value={this.state.email}
-          onChange={event => this.setState(byPropKey('email', event.target.value))}
-          type="text"
-          placeholder="Email Address"
-        /> */}
-        {/* <button disabled={isInvalid} type="submit">
-          Reset My Password
-        </button> */}
 
         <RaisedButton disabled={isInvalid} type="submit" label="Reset Password" secondary={true} style={btnStyle} />
 

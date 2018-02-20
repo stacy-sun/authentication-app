@@ -74,7 +74,6 @@ class NavBar extends React.Component {
 
         <AppBar
         title={<span style={Styles.title} >Menu</span>}
-        // onLeftIconButtonClick={this.handleToggle}
         onTitleClick={this.handleToggle}
         iconElementRight={
         <div>
