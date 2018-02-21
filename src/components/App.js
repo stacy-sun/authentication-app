@@ -18,22 +18,24 @@ import withAuthentication from './withAuthentication';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () =>
-  <Router>
+  // <Router>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
     <div>
       <Navigation />
 
-      <Route exact path={routes.LANDING} component={() => <LandingPage />} />
-      <Route exact path={routes.SIGN_UP} component={() => <SignUpPage />} />
-      <Route exact path={routes.SIGN_IN} component={() => <SignInPage />} />
-      <Route exact path={routes.PASSWORD_FORGET} component={() => <PasswordForgetPage />} />
-      <Route exact path={routes.HOME} component={() => <HomePage />} />
-      <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
+      <Route path={routes.LANDING} component={() => <LandingPage />} />
+      <Route path={routes.SIGN_UP} component={() => <SignUpPage />} />
+      <Route path={routes.SIGN_IN} component={() => <SignInPage />} />
+      <Route path={routes.PASSWORD_FORGET} component={() => <PasswordForgetPage />} />
+      <Route path={routes.HOME} component={() => <HomePage />} />
+      <Route path={routes.ACCOUNT} component={() => <AccountPage />} />
     </div>
     </MuiThemeProvider>
-  </Router>
+    </BrowserRouter>
+  {/* </Router> */}
 
 export default withAuthentication(App);
