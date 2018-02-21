@@ -26,12 +26,12 @@ const App = () =>
     <div>
       <Navigation />
 
-      <Route path={routes.LANDING && process.env.PUBLIC_URL + '/'} component={() => <LandingPage />} />
-      <Route path={routes.SIGN_UP && process.env.PUBLIC_URL + '/'} component={() => <SignUpPage />} />
-      <Route path={routes.SIGN_IN && process.env.PUBLIC_URL + '/'} component={() => <SignInPage />} />
-      <Route path={routes.PASSWORD_FORGET && process.env.PUBLIC_URL + '/'} component={() => <PasswordForgetPage />} />
-      <Route path={routes.HOME && process.env.PUBLIC_URL + '/'} component={() => <HomePage />} />
-      <Route path={routes.ACCOUNT && process.env.PUBLIC_URL + '/'} component={() => <AccountPage />} />
+      <Route path={routes.LANDING} component={() => <LandingPage />} />
+      <Route path={routes.SIGN_UP} component={() => <SignUpPage />} />
+      <Route path={routes.SIGN_IN} component={() => <SignInPage />} />
+      <Route path={routes.PASSWORD_FORGET} component={() => <PasswordForgetPage />} />
+      <Route path={routes.HOME} component={() => <HomePage />} />
+      <Route path={routes.ACCOUNT} component={() => <AccountPage />} />
     </div>
     </MuiThemeProvider>
   </Router>
